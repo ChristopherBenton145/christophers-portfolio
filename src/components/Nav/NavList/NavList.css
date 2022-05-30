@@ -1,0 +1,139 @@
+/* List */
+
+.list {
+  --color: #F70A5D;
+
+  width: calc(100vw - 200px);
+  max-width: 1000px;
+  height: 100%;
+  display: none;
+  position: relative;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: var(--color);
+  color: #fff;
+}
+
+
+.list li {
+  position: relative;
+  transition: background-color 0.2s;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+ 
+.list li::before {
+  content: '';
+  width: 0;
+  height: 2px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: width 0.4s;
+  background-color: #fff;
+  border-radius: 10px;
+  margin: auto;
+}
+  
+.list li.active::before {
+  width: 100%;
+}
+  
+.list .ribbon1::before, .list .ribbon1::after, .list .ribbon2::before, .list .ribbon2::after {
+  content: '';
+  position: absolute;
+  border-color: transparent transparent var(--color);
+  border-style: solid;
+  border-width: 50px;
+}
+  
+.list .ribbon1::before {
+  top: -100%;
+  left: -50px;
+}
+  
+.list .ribbon1::after {
+  left: -50px;
+  bottom: -100%;
+  transform: rotate(180deg);
+}
+  
+.list .ribbon2::before {
+  top: -100%;
+  right: -50px;
+}
+  
+.list .ribbon2::after {
+  right: -50px;
+  bottom: -100%;
+  transform: rotate(180deg);
+}
+
+/* List Small */
+
+.list-small {
+  --color: #F70A5D;
+
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  position: fixed;
+  top: -16px;
+  left: 0;
+  transition: opacity 0.2s;
+  background-color: #fff;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.list-small.active {
+  pointer-events: all;
+  opacity: 1;
+}
+
+.list-small li {
+  position: relative;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.list-small li::before {
+  content: '';
+  width: 0;
+  height: 3px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -3px;
+  margin: auto;
+  background-color: var(--color);
+  border-radius: 4px;
+  transition: width 0.2s;
+}
+
+.list-small li.active {
+  color: var(--color);
+}
+
+.list-small li.active::before {
+  width: 100%;
+}
+
+/* Media Queries */
+
+@media (min-width: 800px) {
+  .list {
+    display: flex;
+  }
+
+  .list-small {
+    pointer-events: none !important;
+    opacity: 0 !important;
+  }
+}
