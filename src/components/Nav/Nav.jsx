@@ -4,7 +4,6 @@ import NavList from './NavList/NavList';
 import MobileMenu, { activateMobileMenu } from './MobileMenu/MobileMenu';
 import $ from 'jquery';
 
-
 export function gotoSection(element, offset) {
   const listSmall = document.querySelector('.list-small');
   listSmall.classList.contains('active') && activateMobileMenu();
