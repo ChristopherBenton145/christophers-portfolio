@@ -1,5 +1,5 @@
 import { memo } from 'react';
-import './NavList.css';
+import './navList.css';
 import { gotoSection } from '../Nav';
 
 function NavList({ className }) {

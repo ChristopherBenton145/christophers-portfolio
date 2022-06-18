@@ -1,6 +1,6 @@
 import { memo } from 'react';
-import './Header.css';
-import Nav from '../../components/Nav/Nav';
+import './header.css';
+import Nav from '../../components/nav/Nav';
 
 function Header() {
   return (

@@ -1,5 +1,5 @@
 import { memo } from 'react';
-import './MobileMenu.css';
+import './mobileMenu.css';
 
 let active = false;
 

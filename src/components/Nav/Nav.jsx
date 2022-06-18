@@ -1,7 +1,7 @@
 import { useEffect, memo } from 'react';
-import './Nav.css';
-import NavList from './NavList/NavList';
-import MobileMenu, { activateMobileMenu } from './MobileMenu/MobileMenu';
+import './nav.css';
+import NavList from './navList/NavList';
+import MobileMenu, { activateMobileMenu } from './mobileMenu/MobileMenu';
 import $ from 'jquery';
 
 export function gotoSection(element, offset) {

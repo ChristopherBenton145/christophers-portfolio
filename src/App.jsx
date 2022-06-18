@@ -1,5 +1,5 @@
 import { memo } from 'react';
-import Header from './sections/Header/Header';
+import Header from './sections/header/Header';
 
 function App() {
   return (
