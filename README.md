@@ -4,7 +4,7 @@
   <h3 align="center">Christopher's Portfolio</h3>
   <p align="center">
     <br />
-    <a href="https://christophers-portfolio42.netlify.app/">https://christophers-portfolio42.netlify.app/</a>
+    <a href="https://christophers-portfolio42.netlify.app">https://christophers-portfolio-42.netlify.app</a>
   </p>
 </div>
 

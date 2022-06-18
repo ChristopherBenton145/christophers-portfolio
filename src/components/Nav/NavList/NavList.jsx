@@ -8,7 +8,7 @@ function NavList({ className }) {
       <div className='ribbon1'></div>
       <li className='active' onClick={() => gotoSection(document.querySelector('header'), 0)}>Home</li>
       <li>About</li>
-      <li>Experience</li>
+      {/* <li>Experience</li> */}
       <li>Projects</li>
       <li>Skills</li>
       <li>Contact</li>

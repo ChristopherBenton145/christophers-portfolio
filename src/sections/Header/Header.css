@@ -18,6 +18,7 @@ header::before {
   left: 0;
   background: url('../../assets/images/sections/header-pattern.png') center center;
   background-size: cover;
+  pointer-events: none;
 }
 
 header::after {
@@ -27,13 +28,74 @@ header::after {
   position: absolute;
   bottom: -1px;
   left: 0;
-  background: url('../../assets/images/sections/hero-guy-1.png') center;
+  background: url('../../assets/images/sections/hero-guy.png') center;
   background-size: cover;
+  pointer-events: none;
+}
+
+header .container {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 30px;
+  height: 75%;
+}
+
+header h1 {
+  font-size: 40px;
+}
+
+header h1 span {
+  font-size: 50px;
+}
+
+header h2 {
+  width: 350px;
+  font-size: 20px;
+}
+
+header button {
+  background-color: white;
+  color: #5238b1;
+  border: none;
+  border-radius: 30px;
+  font-size: 20px;
+  padding: 15px 30px;
+  cursor: pointer;
 }
 
 @media (min-width: 800px) {
   header::after {
     height: 400px;
     bottom: -50px;
+  }
+
+  header h1 {
+    font-size: 60px;
+  }
+
+  header h1 span {
+    font-size: 70px;
+  }
+
+  header h2 {
+    width: fit-content;
+  }
+}
+
+@media (min-width: 1500px) {
+  header h1 {
+    font-size: 70px;
+  }
+
+  header h1 span {
+    font-size: 80px;
+  }
+
+  header h2 {
+    width: fit-content;
   }
 }
